@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*,html,body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+:root {
+    --red:#FF6565;
+    --white:#FFFFFF;
+}
+
+body {
+    background: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    color:var(--white);
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px ;
+    height: 100vh;
+    display: flex;
+    gap:20rem;
+    flex-direction: column;
+    margin: auto;
+}
+
+header{
+    max-width: 1000.392px;
+    max-height: 32px;
+    padding:20px
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.nav #logo>img {
+    width: 161px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.nav .menu {
+ list-style-type: none;
+ display: flex;
+ gap:20px;
+}
+
+
+.nav .menu a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav .menu a:hover{
+   color:var(--red);
+}
+.burger-btn {
+    display: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hero {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+}
+
+.hero .sub-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.hero .hero-title p {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hero-btn>button {
+    width:162px;
+    background: var(--red);
+    font-weight: 500;
+    color:var(--white);
+    padding:20px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 2px  black;
+    cursor: pointer;
+    border: none;
+}
+
+.hero-btn>button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    max-width: 50%;
+    word-spacing: 2px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+
+
+
+
+@media (max-width:480px) {
+
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+    }
+
+    
+
+    header {
+        max-width: 247px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap:40px;
+    }
+    
+    .nav .nav-main {
+        display: flex;
+        gap:20px;
+        align-items: center;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        display: none;
+        margin-left: 5rem;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .hero {
+        padding:10px;
+        margin-top:10rem;
+    }
+
+    .hero .sub-title {
+        font-weight: 800;
+        font-size: 23px;
+        line-height: normal;
+    }
+
+    .hero .hero-title p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn>button {
+        width:162px;
+        font-weight: 100;
+        padding:10px;
+
+    }
+
+    .hero-description {
+        max-width: 100%;
+        word-spacing: 2px;
+        font-weight: 100;
+        line-height: 30px;
+        text-align: center;
+    }
+
+}

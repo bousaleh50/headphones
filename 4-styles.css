@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400&display=swap');
+
+*,html,body {
+    margin:0;
+    padding:0;
+    font-family:sans-serif;
+}
+
+:root {
+    --red:#FF6565;
+    --white:#FFFFFF;
+    --dark-blue:#071629;
+}
+
+
+
+body {
+    background: url("./images/headphones_hero_1.jpg");
+    background-repeat: no-repeat;
+    color:var(--white);
+    text-align: center;
+}
+
+.container {
+    max-width: 1000px ;
+    height:800px;
+    display: flex;
+    gap:15rem;
+    flex-direction: column;
+    margin: auto;
+}
+
+header{
+    max-width: 1000.392px;
+    max-height: 32px;
+    padding:20px
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+
+
+.nav #logo>img {
+    width: 161px;
+    height: 32px;
+    flex-shrink: 0;
+}
+
+.nav .menu {
+ list-style-type: none;
+ display: flex;
+ gap:20px;
+}
+
+
+.nav .menu a{
+  text-decoration: none;
+  color: var(--white);
+}
+
+.nav .menu a:hover{
+   color:var(--red);
+}
+.burger-btn {
+    display: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.hero {
+   margin: auto;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 40px;
+}
+
+.hero .sub-title {
+    font-weight: 800;
+    font-size: 32px;
+    line-height: normal;
+}
+
+.hero .hero-title p {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.hero-btn>button,#submit {
+    width:162px;
+    background: var(--red);
+    font-weight: 500;
+    color:var(--white);
+    padding:20px;
+    border-radius: 40px;
+    box-shadow: 0px 2px 2px  black;
+    cursor: pointer;
+    border: none;
+}
+
+.hero-btn>button:hover {
+    opacity: 0.9;
+}
+
+.hero-description {
+    max-width: 50%;
+    word-spacing: 2px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+}
+/*===============what we do section==========*/
+.what-we-do,.our-results {
+    background-color: var(--white);
+    color:black;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap:5rem;
+}
+
+.what-we-do .hero2,.our-results .hero2 {
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+}
+
+.what-we-do .hero2 .title,.our-results .hero2 .title {
+    font-weight: 800;
+    font-size: 32px;
+}
+
+.what-we-do .hero2 .description,.our-results .hero2 .description {
+    line-height: 30px;
+}
+
+.what-we-do .services {
+    display: flex;
+}
+
+.what-we-do .services span {
+    color: var(--red);
+    font-size: 10rem;
+}
+
+.what-we-do .clearfix {
+    display: flex;
+    flex-direction: column;
+    gap:2em;
+}
+
+.what-we-do .clearfix  .description {
+    line-height: 2em;
+}
+
+/*===========our results section=======*/
+
+.our-results {
+    background: url("./images/headphones_hero_2.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: var(--white);
+    padding: 4rem;
+}
+.our-results .hero2 .title {
+    font-size: 1.2em;
+}
+
+.hero-results {
+    display: flex;
+    gap:4em;
+}
+
+.hero-results .results {
+    padding:1em;
+}
+
+.hero-results .results {
+    max-width: fit-content;
+    height: 7rem;
+    background:url("./images/pentagone.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:4px;
+}
+
+/*=========Contact Section=====*/
+.contact-us {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    gap:5rem;
+}
+
+.contact-us form {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    gap:2rem;
+}
+
+.contact-us .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.contact-us .form-group input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid black;
+    outline: none;
+}
+
+.contact-us form button {
+    margin: auto;
+}
+
+footer {
+    background: var(--dark-blue);
+    width: 100vw;
+    position: inherit;
+    margin-left: -19%;
+    right: 0;
+}
+
+footer .top-footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+footer .copy-right p {
+    color: gray ;
+}
+
+@media (max-width:480px) {
+
+    body{
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        overflow-x: hidden;
+    }
+
+    .container {
+        gap:5rem;
+        max-height: fit-content;
+    }
+
+    header {
+        max-width: 247px;
+    }
+
+    .nav {
+        flex-direction: column;
+        gap:40px;
+    }
+    
+    .nav .nav-main {
+        display: flex;
+        gap:20px;
+        align-items: center;
+    }
+
+    .nav .menu {
+        flex-direction: column;
+        display: none;
+        margin-left: 5rem;
+    }
+
+    .burger-btn {
+        display: block;
+    }
+
+    .hero {
+        padding:20px;
+        margin-top:10rem;
+        text-align: center;
+    }
+
+    .hero .sub-title {
+        font-weight: 800;
+        font-size: 32px;
+        line-height: normal;
+    }
+
+    .hero .hero-title p {
+        font-size: 0.9rem;
+    }
+
+    .hero-btn>button {
+        width:162px;
+        font-weight: 100;
+        padding:10px;
+
+    }
+
+    .hero-description {
+        max-width: 100%;
+        word-spacing: 2px;
+        font-weight: 100;
+        line-height: 30px;
+        text-align: center;
+        
+    }
+
+    .what-we-do .hero2 {
+        padding: 2rem;
+    }
+    
+    .what-we-do .hero2 .description {
+        min-width: 100%;
+    }
+
+    .what-we-do .hero2 .title {
+        font-weight: 800;
+        font-size: 1.5em;
+    }
+
+    
+    
+    .what-we-do .services {
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .what-we-do .services span {
+        color: var(--red);
+        font-size: 10rem;
+    }
+    
+.hero-results {
+    flex-direction: column;
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: auto;
+    gap:2rem;
+}
+
+footer .top-footer {
+    flex-direction: column;
+    gap:2rem;
+}
+
+}
